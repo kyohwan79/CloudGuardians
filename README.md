@@ -6,14 +6,14 @@
 
 서버 필요한 것 TO 김형주
   - vyatta에 17개 NIC 추가하기(
-  - 구축할 서버리스트 중에서 본인이 하고있는 것은 글씨는 굵게 해주세요 이라고 써주세요. 남은 서버는 남은 사람이 해볼게요.
+  - 구축할 서버리스트 중에서 본인이 하고있는 것은 별도로 표기해주세요. 남은 서버는 남은 사람이 해볼게요.
     - winser2016
     - Log remote server
     - Log Real server
     - NAS
     - DHCP + DNS + Proxy
     - NTP
-    - FTP
+    - FTP...ing
     - Mail
     - DB
     - Bacular
