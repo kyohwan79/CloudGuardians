@@ -25,7 +25,7 @@ Error from server (Forbidden): deployments.apps is forbidden: User "system:servi
 
 **Role**과 **RoleBinding 생성**
 
-**Role 생성 (**khj-role.yaml)
+**Role 생성** (khj-role.yaml)
 
 ```yaml
 apiVersion: rbac.authorization.k8s.io/v1
@@ -39,7 +39,7 @@ rules:
   verbs: ["get", "list", "watch"]
 ```
 
-**RoleBinding 생성 (**khj-rolebinding.yaml)
+**RoleBinding 생성** (khj-rolebinding.yaml)
 
 ```yaml
 apiVersion: rbac.authorization.k8s.io/v1
