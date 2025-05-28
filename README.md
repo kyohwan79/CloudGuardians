@@ -13,7 +13,7 @@
     - NAS
     - DHCP + DNS + Proxy
     - NTP
-    - <span style="background-color:#DCFFE4"> Web </span>
+    - FTP
     - Mail
     - DB
     - Bacular
