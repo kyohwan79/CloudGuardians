@@ -50,7 +50,7 @@ $ sudo mysql -u root -p
 -- root 사용자의 plugin 확인
 > SELECT user, host, plugin FROM mysql.user WHERE user = 'root';
 -- root 사용자의 인증 플러그인을 변경하고 비밀번호 설정
-> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_root_password123!';
+> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'rootoor';
 
 -- 권한 적용
 > FLUSH PRIVILEGES;
