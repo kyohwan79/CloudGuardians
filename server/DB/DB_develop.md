@@ -6,7 +6,7 @@
 
 ## 개요  
 - **개발 환경** :   Ubuntu 18.04
-- **서버 IP** : `192.168.80.2`
+- **서버 IP** : `192.168.100.7`
 - **서비스 port** : `3306`
 <br>
 
@@ -51,6 +51,7 @@ $ sudo mysql -u root -p
 > SELECT user, host, plugin FROM mysql.user WHERE user = 'root';
 -- root 사용자의 인증 플러그인을 변경하고 비밀번호 설정
 > ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'rootoor';
+> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'rootoor' WITH GRANT OPTION;
 
 -- 권한 적용
 > FLUSH PRIVILEGES;
@@ -62,4 +63,11 @@ $ sudo mysql -u root -p
 > EXIT;
 ```
 
+## 6️⃣다른 머신에서 확인
+MySQL client 설치 후 root계정 접속 확인
+```bash
+sudo apt update
+sudo apt install mysql-client -y
+mysql -h 192.168.100.7 -u root -p
 
+```
