@@ -62,6 +62,7 @@ $ sudo mysql -u root -p
 -- MySQL 종료
 > EXIT;
 ```
+<br>
 
 ## 6️⃣다른 머신에서 확인
 MySQL client 설치 후 root계정 접속 확인
