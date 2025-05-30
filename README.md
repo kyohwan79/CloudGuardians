@@ -8,8 +8,8 @@
   - vyatta에 17개 NIC 추가하기(
   - 구축할 서버리스트 중에서 본인이 하고있는 것은 별도로 표기해주세요. 남은 서버는 남은 사람이 해볼게요.
     - AD winser2016
-    - Log remote server
-    - Log Real server
+    - Log remote server 깡통 클라이언트
+    - Log Real server 로컬
     - NAS
     - Mail
     - Web(local)
