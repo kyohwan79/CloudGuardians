@@ -1,0 +1,6 @@
+vlan
+router/switch 의 enable secret 암호알고리즘은 어려운 걸로 올려볼까?
+VTP server와 Transparent 를 활용해볼까. 각 지사 안에 스위치가 두 개 있는데 하나를 서버로 하고 하나를 클라이언트로 해서 스위치도 쓸수있지 않을까? 그런데 공통된 vlan이 두 개 이상의 스위치에 있어야 쓸모가 있는거라 우리한텐 애매할지도
+VTP Pruning: vlan을 쓰려면 트렁킹을 해줘야 태깅이 붙어서 사용이 가능해진다?
+port-security는 sticky로 하면 학습된 맥테이블을 저장한다. 하지만 static이 제일 안전하다.
+ACL사용하기
