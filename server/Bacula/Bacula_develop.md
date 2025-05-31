@@ -70,11 +70,12 @@ Job {
   Name = "MySQL-Restore"
   Type = Restore
   Client = bacula-fd
-  Storage = File1
+  Storage = FileStorage
   FileSet = "MySQL-FileSet"
   Pool = File
   Messages = Standard
   Where = /bacula-restores
+  RunAfterJob = "/opt/bacula/scripts/mysql_restore_apply.sh"
 }
 
 # 기존 Autochanger 수정
@@ -216,6 +217,9 @@ sudo mkdir -p /opt/bacula/scripts
 
 # 백업 스크립트 생성
 sudo nano /opt/bacula/scripts/mysql_backup.sh
+
+# 복구 스크립트 생성
+nano /opt/bacula/scripts/mysql_restore_apply.sh
 
 
 /usr/share/bacula-director/create_mysql_database
