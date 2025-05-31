@@ -1,0 +1,59 @@
+#스위치에서 설정
+en
+conf t
+
+#VLAN 생성
+vlan 10
+name TRANS
+exit
+
+vlan 20
+name MANAGE
+exit
+
+vlan 30
+name AD
+exit
+
+#노드/서버 포트 할당
+int fa1/1
+sw mo acc #switchport mode access
+sw acc vlan 10
+exit
+
+int fa2/1
+sw mo acc
+sw acc vlan 10
+exit
+
+int fa3/1
+sw mo acc
+sw acc vlan 20
+exit
+
+int fa5/1
+sw mo acc
+sw acc vlan 20
+exit
+
+int fa6/1
+sw mo acc
+sw acc vlan 30
+exit
+
+int fa0
+sw mo tru #switch  mode trunk
+exit
+
+end #설정 종료
+wr#설정 저장
+
+#라우터로 연결되는 트렁크포트 설정
+int fa0/24
+sw mo tru
+sw tr en dot1q #switchport trunk encapsulation dot1q
+sw tr allowed vlan 10,20,30 #vlan all로 대체 가능
+exit
+
+end
+wr
