@@ -1,8 +1,8 @@
-#스위치 설정
+!스위치 설정
 en
 conf t
 
-#VLAN 생성
+!VLAN 생성
 vlan 10
 name TRANS
 exit
@@ -15,10 +15,10 @@ vlan 30
 name AD
 exit
 
-#노드/서버 포트 할당
+!노드/서버 포트 할당
 int fa1/1
 sw mo acc
-#switchport mode access
+!switchport mode access
 sw acc vlan 10
 exit
 
@@ -44,41 +44,41 @@ exit
 
 int fa0/24
 sw mo tru
-#switch mode trunk
+!switch mode trunk
 exit
 
-end #설정 종료
-wr #설정 저장
+end !설정 종료
+wr !설정 저장
 
-#라우터로 연결되는 트렁크포트 설정
+!라우터로 연결되는 트렁크포트 설정
 int fa0/24
 sw mo tru
 sw tr encap dot1q
-#switchport trunk encapsulation dot1q
+!switchport trunk encapsulation dot1q
 sw tr allowed vlan 10,20,30
-#vlan all로 대체 가능
+!vlan all로 대체 가능
 exit
 
 end
 wr
 
-#라우터의 서브인터페이스 및 IP주소 설정 스크립트
+!라우터의 서브인터페이스 및 IP주소 설정 스크립트
 en
 conf t
 
-#VLAN10 (물류운송팀)
+!VLAN10 (물류운송팀)
 int fa0/0.1
 encap dot1Q 10
 ip addr 192.168.10.254 255.255.255.0
 no shut
 
-#VLAN20(관리팀)
+!VLAN20(관리팀)
 int fa0/0.2
 encap dot1Q 20
 ip addr 192.168.20.254 255.255.255.0
 no shut
 
-#VLAN30 (AD)
+!VLAN30 (AD)
 int fa0/0.3
 encap dot1Q 30
 ip addr 192.168.30.254 255.255.255.0
