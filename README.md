@@ -8,12 +8,10 @@
   - vyatta에 17개 NIC 추가하기(
   - 구축할 서버리스트 중에서 본인이 하고있는 것은 별도로 표기해주세요. 남은 서버는 남은 사람이 해볼게요.
     - AD winser2016
-    - Log remote server 깡통 클라이언트
-    - Log Real server 로컬
+    - Log server(ssh 로그인 관련 로그를 로컬과 백업센터 이중저장, 그 외 웹이나 디비에 로그인 관련 로그도 이중저장 가능하다면 하면 좋을듯)
     - NAS
     - Mail
     - Web(local)
-
     - DB...ing
     - Bacular...ing
     - Web(cloud)...ing
