@@ -1,0 +1,56 @@
+# dmz_vlan60_port_security.sh
+# DMZ VLAN60 (192.168.60.0/24) 서버 포트 port-security 설정
+
+en
+conf t
+
+# 서버 각각의 포트에 port-security 적용
+int f0/3
+sw mo acc
+sw acc vl 60
+sw po sec
+sw po sec max 1
+sw po sec vio shut
+sw po sec mac sti
+
+int f0/4
+sw mo acc
+sw acc vl 60
+sw po sec
+sw po sec max 1
+sw po sec vio shut
+sw po sec mac sti
+
+int f0/5
+sw mo acc
+sw acc vl 60
+sw po sec
+sw po sec max 1
+sw po sec vio shut
+sw po sec mac sti
+
+int f0/6
+sw mo acc
+sw acc vl 60
+sw po sec
+sw po sec max 1
+sw po sec vio shut
+sw po sec mac sti
+
+int f0/7
+sw mo acc
+sw acc vl 60
+sw po sec
+sw po sec max 1
+sw po sec vio shut
+sw po sec mac sti
+
+int f0/9
+sw mo acc
+sw acc vl 60
+sw po sec
+sw po sec max 1
+sw po sec vio shut
+sw po sec mac sti
+
+wr
