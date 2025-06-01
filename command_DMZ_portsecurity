@@ -6,8 +6,8 @@ conf t
 int f0/3
 sw mo acc
 !switchport mode access
-sw acc vl 60
-!switchport access vlan 60
+sw acc vl 70
+!switchport access vlan 70
 sw po sec
 !switchport port-security
 sw po sec max 1
@@ -20,7 +20,7 @@ sw po sec mac sti
 
 int f0/4
 sw mo acc
-sw acc vl 60
+sw acc vl 70
 sw po sec
 sw po sec max 1
 sw po sec vio shut
@@ -28,7 +28,7 @@ sw po sec mac sti
 
 int f0/5
 sw mo acc
-sw acc vl 60
+sw acc vl 70
 sw po sec
 sw po sec max 1
 sw po sec vio shut
@@ -36,7 +36,7 @@ sw po sec mac sti
 
 int f0/6
 sw mo acc
-sw acc vl 60
+sw acc vl 70
 sw po sec
 sw po sec max 1
 sw po sec vio shut
@@ -44,7 +44,7 @@ sw po sec mac sti
 
 int f0/7
 sw mo acc
-sw acc vl 60
+sw acc vl 70
 sw po sec
 sw po sec max 1
 sw po sec vio shut
@@ -52,7 +52,7 @@ sw po sec mac sti
 
 int f0/9
 sw mo acc
-sw acc vl 60
+sw acc vl 70
 sw po sec
 sw po sec max 1
 sw po sec vio shut
