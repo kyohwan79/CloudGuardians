@@ -1,11 +1,11 @@
 ```mermaid
 graph TD
     %% 서버 정의
-    subgraph "MariaDB Server (192.168.100.71)"
+    subgraph "MariaDB Server(.71)"
         MDB[(MariaDB<br/>Database)]
     end
     
-    subgraph "Bacula Server (192.168.100.96)"
+    subgraph "Bacula Server (.96)"
         DIR[Bacula Director<br/>bacula-dir]
         SD[Storage Daemon<br/>bacula-sd]
         FD[File Daemon<br/>bacula-fd]
@@ -17,23 +17,23 @@ graph TD
     end
     
     %% 백업 프로세스
-    subgraph "백업 프로세스 (MySQL-Backup Job)"
-        B1[1. Job 시작<br/>RunBeforeJob 실행]
-        B2[2. mysql_backup.sh<br/>mysqldump 실행]
-        B3[3. /tmp/mysql_backup.sql<br/>생성]
-        B4[4. File Daemon가<br/>파일 읽기]
-        B5[5. Storage Daemon로<br/>데이터 전송]
-        B6[6. 백업 저장소에<br/>저장]
-        B7[7. RunAfterJob<br/>임시파일 삭제]
+    subgraph "백업 프로세스"
+        B1[Job 시작<br/>RunBeforeJob 실행]
+        B2[mysql_backup.sh<br/>mysqldump 실행]
+        B3["/tmp/mysql_backup.sql"<br/>생성]
+        B4[File Daemon<br/>파일 읽기]
+        B5[Storage Daemon로<br/>데이터 전송]
+        B6[백업 저장소에<br/>저장]
+        B7[RunAfterJob<br/>임시파일 삭제]
     end
     
     %% 복원 프로세스
-    subgraph "복원 프로세스 (MySQL-Restore Job)"
-        R1[1. 복원 Job 시작]
-        R2[2. 백업 저장소에서<br/>데이터 읽기]
-        R3[3. /bacula-restores/tmp/<br/>mysql_backup.sql 복원]
-        R4[4. RunAfterJob<br/>mysql_restore_apply.sh]
-        R5[5. MySQL로 데이터<br/>복원 실행]
+    subgraph "복원 프로세스"
+        R1[복원 Job 시작]
+        R2[백업 저장소에서<br/>데이터 읽기]
+        R3["/bacula-restores/tmp/"<br/>mysql_backup.sql 복원]
+        R4[RunAfterJob<br/>mysql_restore_apply.sh]
+        R5[MySQL로 데이터<br/>복원 실행]
     end
     
     %% 연결 관계 - 백업
@@ -70,5 +70,4 @@ graph TD
     class STORAGE storage
     class B1,B2,B3,B4,B5,B6,B7 backup
     class R1,R2,R3,R4,R5 restore
-
 ```
