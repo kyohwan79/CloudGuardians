@@ -1,17 +1,22 @@
-# dmz_vlan60_port_security.sh
-# DMZ VLAN60 (192.168.60.0/24) 서버 포트 port-security 설정
-
+#Standby 스위치에서 설정
 en
 conf t
 
 # 서버 각각의 포트에 port-security 적용
 int f0/3
 sw mo acc
+!switchport mode access
 sw acc vl 60
+!switchport access vlan 60
 sw po sec
+!switchport port-security
 sw po sec max 1
+!switchport port-security maximum 1
 sw po sec vio shut
+!switchport port-security violation shutdown 위반 시 포트 차단
 sw po sec mac sti
+!switchport port-security mac-address sticky 현재 MAC 자동 저장
+
 
 int f0/4
 sw mo acc
@@ -51,6 +56,5 @@ sw acc vl 60
 sw po sec
 sw po sec max 1
 sw po sec vio shut
-sw po sec mac sti
 
 wr
