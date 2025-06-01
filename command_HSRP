@@ -1,1 +1,84 @@
+!Active Router
+en
+conf t
 
+! 마케팅부 (VLAN 40)
+int fa0/0.40
+encap dot1q 40
+ip addr 192.168.40.1 255.255.255.0
+standby 40 ip 192.168.40.254
+standby 40 pri 110
+! priority 100보다 높게 설정해 Active 역할
+standby 40 pre
+! preemption 활성화
+
+! 운영부 (VLAN 50)
+int fa0/0.50
+encap dot1q 50
+ip addr 192.168.50.1 255.255.255.0
+standby 50 ip 192.168.50.254
+standby 50 pri 110
+standby 50 pre
+
+! 인사부 (VLAN 60)
+int fa0/0.60
+encap dot1q 60
+ip addr 192.168.60.1 255.255.255.0
+standby 60 ip 192.168.60.254
+standby 60 pri 110
+standby 60 pre
+
+! DMZ (VLAN 70)
+int fa0/0.70
+encap dot1q 70
+ip addr 192.168.70.1 255.255.255.0
+standby 70 ip 192.168.70.254
+standby 70 pri 110
+standby 70 pre
+
+! L3 Switch와 연결
+int g0/0
+ip addr 172.16.0.2 255.255.255.248
+no shut
+
+
+!StandBy Router
+en
+conf t
+
+! 마케팅부 (VLAN 40)
+int fa0/0.40
+encap dot1q 40
+ip addr 192.168.40.2 255.255.255.0
+standby 40 ip 192.168.40.254
+standby 40 pri 100
+standby 40 pre
+
+! 운영부 (VLAN 50)
+int fa0/0.50
+encap dot1q 50
+ip addr 192.168.50.2 255.255.255.0
+standby 50 ip 192.168.50.254
+standby 50 pri 100
+standby 50 pre
+
+! 인사부 (VLAN 60)
+int fa0/0.60
+encap dot1q 60
+ip addr 192.168.60.2 255.255.255.0
+standby 60 ip 192.168.60.254
+standby 60 pri 100
+standby 60 pre
+
+! DMZ (VLAN 70)
+int fa0/0.70
+encap dot1q 70
+ip addr 192.168.70.2 255.255.255.0
+standby 70 ip 192.168.70.254
+standby 70 pri 100
+standby 70 pre
+
+! L3 Switch와의 연결
+int g0/0
+ip addr 172.16.0.3 255.255.255.248
+no shut
