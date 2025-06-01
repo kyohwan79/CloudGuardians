@@ -1,5 +1,4 @@
-'''mermaid
-
+```mermaid
 graph TD
     %% 서버 정의
     subgraph "MariaDB Server (192.168.100.71)"
