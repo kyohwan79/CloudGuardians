@@ -86,3 +86,6 @@ no shut
 
 end
 wr
+
+! Main_L3스위치에서는 라우팅을 켜줘야 함
+ip routing
