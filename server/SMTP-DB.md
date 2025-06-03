@@ -246,15 +246,15 @@ SELECT * FROM users;
 SELECT User, Host FROM mysql.user WHERE User = 'mailuser';
 SHOW GRANTS FOR 'mailuser'@'192.168.70.%';
 ```
-
 </br>
+
 ### 접속 정보
-- **서버 IP**: 192.168.70.71
-- **포트**: 3306
-- **데이터베이스**: mailserver
-- **사용자명**: mailuser
-- **비밀번호**: rootoor
-- **접속 권한**: 192.168.70.% (192.168.100.0/24 대역)
+- **서버 IP**: 192.168.70.71</br>
+- **포트**: 3306</br>
+- **데이터베이스**: mailserver</br>
+- **사용자명**: mailuser</br>
+- **비밀번호**: rootoor</br>
+- **접속 권한**: 192.168.70.% (192.168.100.0/24 대역)</br>
 
 ### 주요 테이블
 ```bash
