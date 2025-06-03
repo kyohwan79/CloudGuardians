@@ -280,3 +280,8 @@ mysql -h 192.168.70.71 -u mailuser -prootoor mailserver -e "SHOW TABLES;"
 # 웹에서 DB 연결 테스트
 curl http://192.168.70.172/db_test.php
 ```
+</br>
+
+주요 데이터:</br>
+- 도메인: ysck.kr</br>
+- 사용자: admin@ysck.kr, test@ysck.kr (비밀번호: rootoor)</br>
