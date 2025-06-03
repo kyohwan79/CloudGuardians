@@ -246,3 +246,37 @@ SELECT * FROM users;
 SELECT User, Host FROM mysql.user WHERE User = 'mailuser';
 SHOW GRANTS FOR 'mailuser'@'192.168.70.%';
 ```
+
+</br>
+### 접속 정보
+- **서버 IP**: 192.168.70.71
+- **포트**: 3306
+- **데이터베이스**: mailserver
+- **사용자명**: mailuser
+- **비밀번호**: rootoor
+- **접속 권한**: 192.168.70.% (192.168.100.0/24 대역)
+
+### 주요 테이블
+```bash
+# 메일 시스템 테이블
+domains          # 도메인 정보
+users            # 사용자 정보  
+aliases          # 메일 별칭
+
+# RoundCube 테이블
+rc_users         # RoundCube 사용자
+session          # 웹 세션
+identities       # 메일 계정 정보
+cache            # 캐시 데이터
+contacts         # 연락처
+contactgroups    # 연락처 그룹
+```
+
+### 연결 테스트 명령어
+```bash
+# SMTP 서버에서 DB 연결 테스트
+mysql -h 192.168.70.71 -u mailuser -prootoor mailserver -e "SHOW TABLES;"
+
+# 웹에서 DB 연결 테스트
+curl http://192.168.70.172/db_test.php
+```
