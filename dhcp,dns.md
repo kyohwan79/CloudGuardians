@@ -32,7 +32,6 @@ check fwd_file and rev_file
 ![image](https://github.com/user-attachments/assets/77baa8c1-fdf9-48dd-9690-d998ae17c3e6)
 
 test dns in client ubuntu
-![image](https://github.com/user-attachments/assets/206e2fba-bd7b-486a-a502-1f4d432aff34)
 ![image](https://github.com/user-attachments/assets/27aeacf4-28af-4c39-a3ee-d9f3a55a22e4)
 
 test reverse dns in client ubuntu
