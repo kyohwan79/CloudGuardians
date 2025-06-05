@@ -35,3 +35,9 @@ VLAN 40 노드 -> Active Router -> VLAN 70 서버
 VLAN 40 노드 -> Standby Router(Active shutdown) -> VLAN 70 서버
 
 ==========
+
+==========IPsec VPN
+
+
+
+==========
