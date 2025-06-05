@@ -27,3 +27,5 @@ VLAN 40 노드 -> Active Router -> VLAN 70 서버
 ![image](https://github.com/user-attachments/assets/36eacbbf-7a8c-4467-8baf-0addb5341623)
 
 VLAN 40 노드 -> Standby Router(Active shutdown) -> VLAN 70 서버
+
+==========
