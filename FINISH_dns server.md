@@ -25,12 +25,12 @@
 ### 문법검사할때 DNS Zone 이름은 'ysck.kr' 이고, 역방향 DNS Zone 이름은 '70.168.192.in-addr.arpa' 이다.
 ![image](https://github.com/user-attachments/assets/77baa8c1-fdf9-48dd-9690-d998ae17c3e6)
 
-# Test DNS in Client
+# Test DNS in Client (dig)
 ![image](https://github.com/user-attachments/assets/27aeacf4-28af-4c39-a3ee-d9f3a55a22e4)
 
-# Test reverse DNS in Client
+# Test reverse DNS in Client (dig -x)
 ![image](https://github.com/user-attachments/assets/76d5a578-e0fd-4c77-83af-1c43e04dd2a9)
 ![image](https://github.com/user-attachments/assets/2b04f4ba-f920-4530-a165-139e423d369c)
 
-# Test nslookup in Client
+# Test nslookup in Client (nslookup)
 ![image](https://github.com/user-attachments/assets/0049cd06-4b98-4b5d-ba5a-fadb038d9def)
