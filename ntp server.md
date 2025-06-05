@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/db0e4b5b-0d83-4b4d-b897-265196ad0a59)# Use chrony to install the NTP server
+# Use chrony to install the NTP server
 yum -y install chrony \
 gedit /etc/chrony.conf : 서버가 참조할 외부 NTP 웹사이트는 아래 3곳이다. 모두 한국 오픈소스 ntp서버 FQDN주소이다. \
 server kr.pool.ntp.org iburst \
