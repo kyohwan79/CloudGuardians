@@ -1,3 +1,11 @@
+### Packages used : chrony 
+(2025년 기준, 리눅스 기본 NTP는 'ntpd' 에서 'chronyd' 로 변경됐습니다. 아래 RedHat 공식 문서 링크 참조)
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-configuring_ntp_using_the_chrony_suite
+### Server IP : 192.168.70.101/24
+### Server OS : Centos 7
+### Client IP : 192.168.10.10/24 (DHCP)
+### Client OS : Ubuntu 18.04
+---
 # Use chrony to install the NTP server
 yum -y install chrony \
 gedit /etc/chrony.conf : 서버가 참조할 외부 NTP 웹사이트는 아래 3곳이다. 모두 한국 오픈소스 ntp서버 FQDN주소이다. \
