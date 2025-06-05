@@ -1,7 +1,7 @@
 # Use chrony package to install the NTP server
-gedit /etc/chrony.conf
-서버가 참조할 외부 NTP 웹사이트는 아래 3곳이다. 모두 한국 오픈소스 ntp서버 FQDN주소이다.
-server kr.pool.ntp.org iburst
+gedit /etc/chrony.conf \
+서버가 참조할 외부 NTP 웹사이트는 아래 3곳이다. 모두 한국 오픈소스 ntp서버 FQDN주소이다. \
+server kr.pool.ntp.org iburst \
 server ntp.kornet.net iburst
 server ntp.bora.net iburst
 그리고 서버가 서비스를 제공할 클라이언트 네트워크 대역대는 아래 9곳이다.
