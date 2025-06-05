@@ -13,6 +13,9 @@ allow 192.168.50.0/24 \
 allow 192.168.60.0/24 \
 allow 192.168.70.0/24 \
 allow 192.168.80.0/24 \
-allow 192.168.90.0/24 \
+allow 192.168.90.0/24 
 
 ![image](https://github.com/user-attachments/assets/ae6f7b6d-cf81-4574-b4b0-258828c07c1e)
+
+방화벽에 chrony 서비스 허용하고 SELinux 비활성화하고 서비스실행파일을 실행해준다.
+![image](https://github.com/user-attachments/assets/67b74218-12f7-42fa-915c-b49ee0077de7)
