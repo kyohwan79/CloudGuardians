@@ -15,7 +15,8 @@ VLAN10 노드 -> VLAN 30 ADser
 ![image](https://github.com/user-attachments/assets/00cce5d4-bac8-48b5-88d8-153c36407ad1)
 
 
-![image](https://github.com/user-attachments/assets/e13efe27-468e-48d8-82d9-6ed4ef2f0255)
+![image](https://github.com/user-attachments/assets/a7b2f556-8f5c-49b6-8a46-287c41e8f8d3)
+
 
 Active
 
