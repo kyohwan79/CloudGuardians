@@ -10,5 +10,5 @@
 ### IPv4 로 수신되는 패킷을 Listen으로 설정한
 ![image](https://github.com/user-attachments/assets/b291e957-5b3e-4741-a30d-718d942bc05f)
 
-# Test connection by Client to Server
+# Test FTP command 'get <remote_route> <local_route>' by Client to Server
 ![image](https://github.com/user-attachments/assets/fbb4b54c-80e4-4567-bc25-36d0a14922a4)
