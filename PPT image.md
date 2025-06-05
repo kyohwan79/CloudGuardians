@@ -16,13 +16,16 @@ VLAN10 노드 -> VLAN 30 ADser
 
 Active
 
+
 ![image](https://github.com/user-attachments/assets/9f317540-7400-4d8c-a779-29934788da33)
 
 Standby
 
+
 ![image](https://github.com/user-attachments/assets/f8aa2a99-9c3a-4ed8-adcf-1734a616eb29)
 
 VLAN 40 노드 -> Active Router -> VLAN 70 서버
+
 
 ![image](https://github.com/user-attachments/assets/36eacbbf-7a8c-4467-8baf-0addb5341623)
 
