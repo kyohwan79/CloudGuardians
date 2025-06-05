@@ -22,7 +22,7 @@
 ![image](https://github.com/user-attachments/assets/6a492ca0-32d8-4e20-b854-44b7721961f7)
 
 # Check fwd_file and rev_file
-###문법검사
+### 문법검사할때 DNS Zone 이름은 'ysck.kr' 이고, 역방향 DNS Zone 이름은 '70.168.192.in-addr.arpa' 이다.
 ![image](https://github.com/user-attachments/assets/77baa8c1-fdf9-48dd-9690-d998ae17c3e6)
 
 # Test DNS in Client
