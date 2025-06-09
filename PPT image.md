@@ -12,7 +12,7 @@ VLAN10 노드 -> VLAN 30 ADser
 
 ==========HSRP
 
-![image](https://github.com/user-attachments/assets/00cce5d4-bac8-48b5-88d8-153c36407ad1)
+![image](https://github.com/user-attachments/assets/a288701c-ca57-4128-a240-744636a3c0ea)
 
 
 ![image](https://github.com/user-attachments/assets/a7b2f556-8f5c-49b6-8a46-287c41e8f8d3)
