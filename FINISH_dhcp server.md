@@ -15,6 +15,5 @@
 # Check the result in client
 ![image](https://github.com/user-attachments/assets/e3d2c1ed-caea-4ec2-a7ed-03b5864ef02e)
 
-# Check the lease file in server (/var/lib/dhcpd/dhcpd.leases)
+# *Check the lease file in server (/var/lib/dhcpd/dhcpd.leases)
 ![image](https://github.com/user-attachments/assets/caa3cb55-25cf-43b2-a4af-cf0c2972782b)
-
