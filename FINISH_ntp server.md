@@ -6,8 +6,8 @@ https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/system_
 ### Client IP : 192.168.10.10/24 (DHCP)
 ### Client OS : Ubuntu 18.04
 ---
-# Set configuration file in Server (/etc/chrony.conf)
-서버가 참조할 외부 NTP 서버는 총 3개이다. 모두 한국의 오픈소스 ntp서버 FQDN주소이다. \
+# *Set configuration file in Server (/etc/chrony.conf)
+*서버가 참조할 외부 NTP 서버는 총 3개이다. 모두 한국의 오픈소스 ntp서버 FQDN주소이다. \
 그리고 서비스를 제공할 클라이언트가 속한 네트워크 대역대는 총 9개이다. 
 ![image](https://github.com/user-attachments/assets/ae6f7b6d-cf81-4574-b4b0-258828c07c1e)
 
@@ -20,8 +20,8 @@ chronyc tracking && timedatectl && date : chrony가 UTC 시간을 가져온 다�
 ![image](https://github.com/user-attachments/assets/ce75622a-acda-451c-a6b6-d144db7af8a1)
 ![image](https://github.com/user-attachments/assets/6eb3fa4f-6b73-4fc2-82b4-7b56bccdc49c)
 
-# Set configuration file in Client (/etc/chrony/chrony.conf)
-서비스를 제공 받을 서버주소를 지정한다
+# *Set configuration file in Client (/etc/chrony/chrony.conf)
+*서비스를 제공 받을 서버주소를 지정한다
 ![image](https://github.com/user-attachments/assets/2b0531f8-bebe-4294-a277-8681eedb8531)
 
 # Set systemd
@@ -32,10 +32,10 @@ chronyc tracking && timedatectl && date : chrony가 UTC 시간을 가져온 다�
 chronyc sources -v 출력값에 서버주소가 나오면 된다 
 ![image](https://github.com/user-attachments/assets/16e073e9-f0b9-4098-8190-623634ac50c5)
 
-# Check the result in Client
-timedatectl : 서버로부터 받아온 시간
+# *Check the result in Client
+*timedatectl : 서버로부터 받아온 시간
 ![image](https://github.com/user-attachments/assets/f973161f-e92a-4ad5-ba47-c4942354cb3c)
 
-# Check the logs served by the Server to the Client
+# *Check the logs served by the Server to the Client
 ![image](https://github.com/user-attachments/assets/fdf650b7-73d8-434f-af6c-d838e2688b78)
 
