@@ -50,13 +50,20 @@ VLAN 40 노드 -> Standby Router(Active shutdown) -> VLAN 70 서버
 ![image](https://github.com/user-attachments/assets/dc832f79-0291-4bd2-87c3-f49946fa9245)
 vlan 10 노드 vpn 가입 -> host ip : main L3 switch
 
-![image](https://github.com/user-attachments/assets/734a1329-7d67-4c2b-87d2-16a33b59afeb)
+![image](https://github.com/user-attachments/assets/971abd50-4625-4b88-9cce-abf9d9071ddf)
 vpn 가입 완료
 
 ![image](https://github.com/user-attachments/assets/e1fc940e-dc84-4d04-b1ae-b4aa5e004f2a)
 vpn 구축 전 vlan 10 노드 -> vlan 80 노드
 
 ![image](https://github.com/user-attachments/assets/c613c99f-41b9-45dc-9f21-20ae47623001)
+구축 후
 
-vpn 구축 후
+==========
+
+==========방화벽&NAT
+
+
+
+
 ==========
