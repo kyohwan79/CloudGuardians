@@ -59,7 +59,7 @@ vpn 가입 완료
 ![image](https://github.com/user-attachments/assets/51702da2-471b-4243-9264-87cfad9256dc)
 vpn 구축 전 vlan 10 노드 -> ISP -> vlan 80 노드
 
-![image](https://github.com/user-attachments/assets/e1cf3ffb-6b25-45ba-a99a-86e682dba9ff)
+![image](https://github.com/user-attachments/assets/dfa1aee2-e77b-40d5-ac1e-31455ee93e95)
 vpn 구축 후
 
 
