@@ -48,7 +48,6 @@ VLAN 40 노드 -> Standby Router(Active shutdown) -> VLAN 70 서버
 ![image](https://github.com/user-attachments/assets/6222cafb-7f1e-45d9-9ea3-267c8b55e6d6)
 
 ![image](https://github.com/user-attachments/assets/dc832f79-0291-4bd2-87c3-f49946fa9245)
-
 vlan 10 노드 vpn 가입 -> host ip : main L3 switch
 
 ![image](https://github.com/user-attachments/assets/734a1329-7d67-4c2b-87d2-16a33b59afeb)
