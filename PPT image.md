@@ -56,7 +56,7 @@ vpn 가입 완료
 ![image](https://github.com/user-attachments/assets/4c41629f-767c-4f49-95a6-846e28b6ff31)
 192.168.10.10에서 ipconfig
 
-![image](https://github.com/user-attachments/assets/0fc824ce-f41c-413d-a5bb-3009ebf4ec4c)
+![image](https://github.com/user-attachments/assets/51702da2-471b-4243-9264-87cfad9256dc)
 vpn 구축 전 vlan 10 노드 -> ISP -> vlan 80 노드
 
 ![image](https://github.com/user-attachments/assets/e1cf3ffb-6b25-45ba-a99a-86e682dba9ff)
