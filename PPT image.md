@@ -53,7 +53,7 @@ vlan 10 노드 vpn 가입 -> host ip : main L3 switch
 ![image](https://github.com/user-attachments/assets/469928bb-6a0e-472d-b118-61cfb1da93bc)
 vpn 가입 완료
 
-![image](https://github.com/user-attachments/assets/e1fc940e-dc84-4d04-b1ae-b4aa5e004f2a)
+![image](https://github.com/user-attachments/assets/0fc824ce-f41c-413d-a5bb-3009ebf4ec4c)
 vpn 구축 전 vlan 10 노드 -> vlan 80 노드
 
 ![image](https://github.com/user-attachments/assets/c613c99f-41b9-45dc-9f21-20ae47623001)
