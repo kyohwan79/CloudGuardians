@@ -1,5 +1,6 @@
 # CloudGuardians
-![image](https://github.com/user-attachments/assets/6e0df8d7-cf18-4c21-9534-49e0b140cd13)
+![image](https://github.com/user-attachments/assets/4ead26b8-3dee-423f-be47-628ec2ee375e)
+
 
 
 
