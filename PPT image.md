@@ -39,7 +39,7 @@ VLAN 40 노드 -> Standby Router(Active shutdown) -> VLAN 70 서버
 
 ==========IPsec VPN
 
-![image](https://github.com/user-attachments/assets/979fc2f5-b70f-4a94-b057-ab2c255d8315)
+![image](https://github.com/user-attachments/assets/c04274cf-dc16-41ce-bfb9-f4aa417e1263)
 
 ![image](https://github.com/user-attachments/assets/5421755b-0cbe-4b04-a1b8-f567d22ae517)
 
